@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de registro</h1>
+    </header>
+    <main>
+        <form>
+            <label for="userName">Nombre </label>
+            <input type="text" id="name" name="userName" required> 
+            <!-- El atributo required lo use para hacerle conocer al usuario que debe ingresar los datos, ahorrando memoria y codigo js-->
+            <label for="userLastName">Apellido </label>
+            <input type="text" id="lastName" name="userLastName" required>
+            <label for="userEmail">Email</label>
+            <input type="email" id="email" name="userEmail" >
+            <label for="UserPassword">Password</label>
+            <input type="password" id="password" name="userPassword" >
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
